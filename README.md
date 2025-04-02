@@ -3,6 +3,7 @@
 # Purpose
 
 This repository is meant to be a template for building your own custom Universal Blue image. This template is the recommended way to make customizations to any image published by the Universal Blue Project:
+
 - [Aurora](https://getaurora.dev/)
 - [Bazzite](https://bazzite.gg/)
 - [Bluefin](https://projectbluefin.io/)
@@ -23,14 +24,14 @@ This template includes a Containerfile and a Github workflow for building the co
 Working knowledge in the following topics:
 
 - Containers
-  - https://www.youtube.com/watch?v=SnSH8Ht3MIc
-  - https://www.mankier.com/5/Containerfile
+  - <https://www.youtube.com/watch?v=SnSH8Ht3MIc>
+  - <https://www.mankier.com/5/Containerfile>
 - bootc
-  - https://bootc-dev.github.io/bootc/
+  - <https://bootc-dev.github.io/bootc/>
 - Fedora Silverblue (and other Fedora Atomic variants)
-  - https://docs.fedoraproject.org/en-US/fedora-silverblue/
+  - <https://docs.fedoraproject.org/en-US/fedora-silverblue/>
 - Github Workflows
-  - https://docs.github.com/en/actions/using-workflows
+  - <https://docs.github.com/en/actions/using-workflows>
 
 # How to Use
 
@@ -41,6 +42,7 @@ Select `Use this Template` and create a new repository from it. To enable the wo
 ## Containerfile
 
 This file defines the operations used to customize the selected image. It contains examples of possible modifications, including how to:
+
 - change the upstream from which the custom image is derived
 - add additional RPM packages
 - add binaries as a layer from other images
@@ -70,7 +72,6 @@ This `Justfile` contains various commands and configurations for building and ma
 - `rebuild-vm`: Alias for `rebuild-qcow2`.
 - `run-vm`: Alias for `run-vm-qcow2`.
 
-
 #### Commands
 
 ###### `check`
@@ -96,6 +97,7 @@ just build $target_image $tag $dx $hwe $gdx
 ```
 
 Arguments:
+
 - `$target_image`: The tag you want to apply to the image (default: aurora).
 - `$tag`: The tag for the image (default: lts).
 - `$dx`: Enable DX (default: "0").
@@ -232,7 +234,6 @@ This provides users a method of verifying the image.
     cosign generate-key-pair
     ```
 
-    
     - Do NOT put in a password when it asks you to, just press enter. The signing key will be used in GitHub Actions and will not work if it is encrypted.
 
 > [!WARNING]
@@ -261,9 +262,9 @@ This provides users a method of verifying the image.
 
 This template comes with the necessary tooling to index your image on [artifacthub.io](https://artifacthub.io), use the `artifacthub-repo.yml` file at the root to verify yourself as the publisher. This is important to you for a few reasons:
 
-- The value of artifacthub is it's one place for people to index their custom images, and since we depend on each other to learn, it helps grow the community. 
+- The value of artifacthub is it's one place for people to index their custom images, and since we depend on each other to learn, it helps grow the community.
 - You get to see your pet project listed with the other cool projects in Cloud Native.
-- Since the site puts your README front and center, it's a good way to learn how to write a good README, learn some marketing, finding your audience, etc. 
+- Since the site puts your README front and center, it's a good way to learn how to write a good README, learn some marketing, finding your audience, etc.
 
 [Discussion thread](https://universal-blue.discourse.group/t/listing-your-custom-image-on-artifacthub/6446)
 
