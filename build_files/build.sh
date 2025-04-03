@@ -22,7 +22,7 @@ dnf5 -y copr disable alternateved/keyd
 
 dnf5 -y install ptyxis kitty gnome-keyring-pam NetworkManager-tui \
   NetworkManager-openvpn xdg-user-dirs \
-  emacs
+  emacs mpv
 
 dnf5 remove code
 
