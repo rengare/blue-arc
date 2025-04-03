@@ -19,7 +19,7 @@ dnf5 -y install ptyxis kitty gnome-keyring-pam NetworkManager-tui \
   NetworkManager-openvpn xdg-user-dirs \
   emacs mpv
 
-dnf5 remove code
+dnf5 -y remove code
 
 # Use a COPR Example:
 #
