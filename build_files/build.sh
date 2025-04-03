@@ -24,6 +24,8 @@ dnf5 -y install ptyxis kitty gnome-keyring-pam NetworkManager-tui \
   NetworkManager-openvpn xdg-user-dirs \
   emacs
 
+dnf5 remove code
+
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
