@@ -16,7 +16,8 @@ dnf5 -y install cosmic-desktop cosmic-store cosmic-edit cosmic-player
 dnf5 -y copr disable ryanabx/cosmic-epoch
 
 dnf5 -y install ptyxis kitty gnome-keyring-pam NetworkManager-tui \
-  NetworkManager-openvpn xdg-user-dirs
+  NetworkManager-openvpn xdg-user-dirs \
+  emacs
 
 # Use a COPR Example:
 #
