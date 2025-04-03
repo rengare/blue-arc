@@ -15,7 +15,9 @@ dnf5 -y copr enable ryanabx/cosmic-epoch
 dnf5 -y install cosmic-desktop cosmic-store cosmic-edit cosmic-player
 dnf5 -y copr disable ryanabx/cosmic-epoch
 
-dnf5 -y install ptyxis
+dnf5 -y install ptyxis kitty gnome-keyring-pam NetworkManager-tui \
+  NetworkManager-openvpn xdg-user-dirs
+
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
@@ -25,8 +27,15 @@ dnf5 -y install ptyxis
 
 #### Example for enabling a System Unit File
 
-systemctl enable podman.socket
-
 systemctl disable gdm || true
 systemctl disable sddm || true
+
+systemctl enable podman.socket
 systemctl enable cosmic-greeter
+systemctl enable cosmic-settings-daemon
+
+# Clean package manager cache
+dnf5 clean all
+
+# Clean temporary files
+rm -rf /tmp/*
