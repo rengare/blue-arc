@@ -1,14 +1,10 @@
 app.drey.Warp
-com.github.k4zmu2a.spacecadetpinball
 com.github.Matoking.protontricks
 com.github.PintaProject.Pinta
 com.github.tchx84.Flatseal
 com.github.wwmm.easyeffects
 com.obsproject.Studio
-com.spotify.Client
 com.usebottles.bottles
-de.leopoldluley.Clapgrep
-dev.vencord.Vesktop
 io.github.dvlv.boxbuddyrs
 io.github.flattool.Warehouse
 io.github.giantpinkrobots.varia
@@ -21,8 +17,10 @@ org.kde.kdenlive
 org.kde.krita
 org.kde.okular
 org.libreoffice.LibreOffice
+com.github.johnfactotum.Foliate
+org.gnome.Evince
+org.gnome.SimpleScan
 org.localsend.localsend_app
-org.qbittorrent.qBittorrent
 org.signal.Signal
 org.telegram.desktop
 org.torproject.torbrowser-launcher
