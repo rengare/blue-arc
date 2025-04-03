@@ -33,7 +33,6 @@ systemctl disable sddm || true
 
 systemctl enable podman.socket
 systemctl enable cosmic-greeter
-systemctl enable cosmic-settings-daemon
 
 # Clean package manager cache
 dnf5 clean all
