@@ -44,3 +44,5 @@ dnf5 clean all
 
 # Clean temporary files
 rm -rf /tmp/*
+
+cp -rf /run/context/system_files /
