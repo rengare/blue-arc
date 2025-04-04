@@ -17,7 +17,7 @@ dnf5 -y copr disable ryanabx/cosmic-epoch
 
 dnf5 -y install ptyxis kitty gnome-keyring-pam NetworkManager-tui \
   NetworkManager-openvpn xdg-user-dirs \
-  emacs mpv git-lfs
+  emacs mpv git-lfs fish
 
 dnf5 -y remove code
 
