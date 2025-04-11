@@ -42,6 +42,7 @@ systemctl disable ublue-update || true
 systemctl enable podman.socket
 systemctl enable cosmic-greeter
 systemctl enable uupd.service
+systemctl enable uupd.timer
 
 # Clean package manager cache
 dnf5 clean all
