@@ -15,11 +15,16 @@ dnf5 -y copr enable ryanabx/cosmic-epoch
 dnf5 -y install cosmic-desktop cosmic-store cosmic-edit cosmic-player
 dnf5 -y copr disable ryanabx/cosmic-epoch
 
+dnf5 -y copr enable ublue-os/packages
+dnf5 -y install uupd
+dnf5 -y copr disable ublue-os/packages
+
 dnf5 -y install ptyxis kitty gnome-keyring-pam NetworkManager-tui \
   NetworkManager-openvpn xdg-user-dirs \
   emacs mpv git-lfs fish
 
 dnf5 -y remove code
+dnf5 -y remove ublue-update
 
 # Use a COPR Example:
 #
@@ -32,6 +37,7 @@ dnf5 -y remove code
 
 systemctl disable gdm || true
 systemctl disable sddm || true
+systemctl disable ublue-update || true
 
 systemctl enable podman.socket
 systemctl enable cosmic-greeter
