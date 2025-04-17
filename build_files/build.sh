@@ -51,3 +51,4 @@ dnf5 clean all
 rm -rf /tmp/*
 
 cp -rf /ctx/system_files/* /
+mkdir /nix
