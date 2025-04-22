@@ -19,9 +19,9 @@ dnf5 -y copr enable ublue-os/packages
 dnf5 -y install uupd
 dnf5 -y copr disable ublue-os/packages
 
-dnf5 -y install ptyxis kitty gnome-keyring-pam NetworkManager-tui \
+dnf5 -y install ptyxis gnome-keyring-pam NetworkManager-tui \
   NetworkManager-openvpn xdg-user-dirs \
-  emacs mpv git-lfs fish
+  emacs mpv git-lfs fish foot kitty
 
 dnf5 -y remove code
 dnf5 -y remove ublue-update
