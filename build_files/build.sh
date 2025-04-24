@@ -21,7 +21,7 @@ dnf5 -y copr disable ublue-os/packages
 
 dnf5 -y install ptyxis gnome-keyring-pam NetworkManager-tui \
   NetworkManager-openvpn xdg-user-dirs \
-  emacs mpv git-lfs fish foot kitty
+  emacs mpv git-lfs fish foot samba samba-client samba-common
 
 dnf5 -y remove code
 dnf5 -y remove ublue-update
